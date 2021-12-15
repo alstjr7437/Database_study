@@ -1,0 +1,22 @@
+계정 만들기
+create user c##user11 identified by user11 
+> creat user 계정 만들기 / c##??(★c##붙이기!) ??아이디 / ide~ 키워드 / by 비밀번호
+default tablespace users
+> tablespace로 공간 만들기 
+temporary tablespace temp
+quota unlimited on users;
+>제한없이 무제한으로 tablespace 사용(unlimited)
+
+커넥트 권한 부여
+grant connect to c##user11;
+
+리소스 권한 부여
+grant resource to c##user11;
+
+user11로 연결
+conn c##user11/user11;
+
+현재 User확인
+show user;
+
+SQL Developer 다운 및 사용

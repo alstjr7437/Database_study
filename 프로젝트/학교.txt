@@ -1,0 +1,14 @@
+학교
+School
+
+학생(고유 번호 / 이름 / 키,몸무게 / 성적 / 폰 / 학년, 반 / 자리 / 담임 번호)
+student(suudent_id, name, body, grade, phone, class, space, teacher_id)
+
+선생님(고유 번호 / 이름 / 키,몸무게 / 폰 / 담임 / 담당과목 / 전입일 / 담당 시설 번호)
+teacher(teacher_id, name, body, phone, homeroom, subject, date, facility_id)
+
+시설(고유 번호 / 이름 / 위치 / 담당자 / 지어진 년도)
+facility(facility_id, name, location, people, date)
+
+관리인(고유 번호 / 이름 / 폰 / 고용일 / 담당 시설 번호)
+management(management_id, name, phone, date, facility_id)
