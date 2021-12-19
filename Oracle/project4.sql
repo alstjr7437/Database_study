@@ -34,7 +34,7 @@ where aform = ( select aform
                 where jname = '검사');
                 
 --2. 캐릭터의 평균공격력보다 높은 공격력의 캐릭터 출력
-select cno, cattack
+select cno as "캐릭터 번호", cattack as "캐릭터 공격력"
 from character
 where cattack > ( select avg(cattack)
                   from character);
